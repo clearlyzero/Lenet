@@ -30,12 +30,5 @@ class LeNet(torch.nn.Module):
         return x
 
 
-import torch
-device = torch.device("cuda:0" if
-                      torch.cuda.is_available() else "cpu")
-print(device)
-input1 = torch.rand([32,3,32,32])
-model = LeNet()
-print(model)
-output = model(input1)
+
 
